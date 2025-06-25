@@ -1,1 +1,43 @@
 # js-nodejs-app
+
+function writeln(a) {
+  console.log(a)
+}
+
+function calculateDelta (a, b, c) {
+  return b * b - 4 * a * c
+}
+
+function printDoubleRoots (delta, a, b) {
+  let sqrtdelta = Math.sqrt(delta)
+  let x1 = (-b + sqrtdelta) / (2 * a)
+  let x2 = (-b - sqrtdelta) / (2 * a)
+
+  writeln("x1 = " + x1 + "x2 = " + x2)
+}
+
+function printRoot (a, b) {
+  writeln("x1 = x2 = " + (-b / (2 * a)))
+}
+
+function printNoRealRoots() {
+  writeln("No real root")
+}
+function findRoots (a, b, c) {
+let delta = calculateDelta(a, b, c)
+if (delta > 0)
+  printDoubleRoots(delta, a, b)
+else if (delta === 0)
+  printRoot(a, b)
+else
+  printNoRealRoots()
+}
+
+function main() {
+  findRoots(1, 3, -18)
+  findRoots(1, 1, 1)
+  findRoots(1, 4, 4)
+  findRoots(1.345, 3.980, -14.567)
+}
+
+main()
