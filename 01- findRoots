@@ -1,5 +1,7 @@
-// eng: Class Exercise: Write a function findRoots that takes the coefficients of a quadratic equation as parameters, computes its roots, and prints them to the console.
-// tr: Sınıf Çalışması: Parametresi ile aldığı ikinci dereceden denklemin katsayılarına göre köklerini bulup ekrana yazdıran findRoots fonksiyonunu yazınız.
+/* 
+eng: Class Exercise: Write a function findRoots that takes the coefficients of a quadratic equation as parameters, computes its roots, and prints them to the console.
+tr: Sınıf Çalışması: Parametresi ile aldığı ikinci dereceden denklemin katsayılarına göre köklerini bulup ekrana yazdıran findRoots fonksiyonunu yazınız.
+*/ 
 
 function writeln(a) {
   console.log(a)
