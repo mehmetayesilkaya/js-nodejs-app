@@ -1,0 +1,25 @@
+/* --------------------------------------------------------------------------------------------------------------- 
+Sınıf Çalışması: Parametresi ile aldığı 3 basamaklı bir sayının basamakları toplamına geri dönen getDigitsSum
+fonksiyonunu yazınız.
+
+Açıklamalar: Fonksiyon sayının 3 basamaklı olup olmadığını kontrol etmeyecektir.
+--------------------------------------------------------------------------------------------------------------- */
+
+function writeln(a) {  
+    console.log(a)  
+}  
+  
+function getDigitsSum(val) {  
+    let a = parseInt(val / 100)  
+    let b = parseInt(val % 100 / 10)  
+    let c = val % 10  
+  
+    return Math.abs(a + b + c)  
+}  
+  
+function main() {  
+    writeln(getDigitsSum(125))  
+    writeln(getDigitsSum(-125))  
+}  
+  
+main()
