@@ -1,0 +1,16 @@
+// countDigit with log10 - better solution
+
+function writeln(a) {
+  console.log(a)
+}
+
+function countDigit(a) {
+  return !a ? 1 : Math.trunc(Math.log10(Math.abs(a))) + 1
+}
+
+function main() {
+  writeln(countDigit(1234567890))
+  writeln(countDigit(-1234567890))
+  writeln(countDigit(0))
+}
+main()
