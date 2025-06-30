@@ -1,0 +1,26 @@
+// Sınıf Çalışması: Parametresi ile aldığı number türden bir sayının basamak sayısını döndüren countDigits fonksiyonunu yazınız.
+
+function writeln(a) {  
+    console.log(a)  
+}  
+  
+function countDigits(a) {  
+    if (a === 0)  
+        return 1  
+  
+    let count = 0  
+  
+    while (a) {  
+        ++count  
+        a = Math.trunc(a / 10)  
+    }  
+  
+    return count  
+}  
+  
+function main() {  
+    writeln(countDigits(1234567890))  
+    writeln(countDigits(-1234567890))  
+    writeln(countDigits(0))  
+}  
+main()
