@@ -1,0 +1,38 @@
+// Parametresi aldığı bir tamsayının asal olup olmadığını test eden isPrime fonksiyonunu yazınız (Hızlı version)
+
+function writeln(a) {
+  console.log(a)
+}
+
+function isPrime(a) {
+  if (a <= 1)
+    return false
+
+  if (a % 2 === 0)
+    return a === 2
+
+  if (a % 3 === 0)
+    return a === 3
+
+  if (a % 5 === 0)
+    return a === 5
+
+  if (a % 7 === 0)
+    return a === 7
+
+  for (let i = 11; i * i <= a; i += 2)
+    if (a % i === 0)
+      return false
+
+  return true
+}
+
+function main() {
+  for (let n = -10; n <= 1_000_100; ++n)
+    if (isPrime(n))
+      writeln(n)
+
+  writeln(isPrime(1_000_003) ? "Asal" : "Asal değil")
+}
+
+main()
