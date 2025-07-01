@@ -1,0 +1,37 @@
+// nextFibonacciNumber
+
+function write(a) {
+  process.stdout.write(a)
+}
+
+function writeLine(a) {
+  write(a === undefined ? '\n' : `${a}\n`)
+}
+
+function nextFibonacciNumber(a) {
+  if (a < 0)
+    return 0
+
+  let prev1 = 1, prev2 = 0, val
+
+  for (;;) {
+    val = prev1 + prev2
+
+    if (val > a)
+      return val
+
+    prev2 = prev1
+    prev1 = val
+  }
+}
+
+function main() {
+  writeLine(nextFibonacciNumber(-1) === 0)
+  writeLine(nextFibonacciNumber(0) === 1)
+  writeLine(nextFibonacciNumber(1) === 2)
+  writeLine(nextFibonacciNumber(5) === 8)
+  writeLine(nextFibonacciNumber(12) === 13)
+  writeLine(nextFibonacciNumber(13) === 21)
+}
+
+main()
