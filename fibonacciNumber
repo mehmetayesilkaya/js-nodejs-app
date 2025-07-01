@@ -1,0 +1,40 @@
+// Fibonacci Number
+
+function write(a) {  
+    process.stdout.write(a)  
+}  
+  
+function writeLine(a) {  
+    write(a === undefined ? '\n' : `${a}\n`)  
+}  
+  
+function fibonacciNumber(n) {  
+    if (n <= 2)  
+        return n - 1  
+  
+    let prev1 = 1, prev2 = 1, val = 1  
+  
+    for (let i = 3; i < n; ++i) {  
+        val = prev1 + prev2  
+  
+        prev2 = prev1  
+        prev1 = val  
+    }  
+    
+    return val  
+}  
+  
+function main() {  
+    writeLine(fibonacciNumber(1))  
+    writeLine(fibonacciNumber(2))  
+    writeLine(fibonacciNumber(3))  
+    writeLine(fibonacciNumber(4))  
+    writeLine(fibonacciNumber(5))  
+    writeLine(fibonacciNumber(6))  
+    writeLine(fibonacciNumber(7))  
+    writeLine(fibonacciNumber(8))  
+    writeLine(fibonacciNumber(9))  
+    writeLine(fibonacciNumber(10))  
+}  
+  
+main()
