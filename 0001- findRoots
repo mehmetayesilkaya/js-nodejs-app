@@ -16,7 +16,7 @@ function printDoubleRoots (delta, a, b) {
   let x1 = (-b + sqrtdelta) / (2 * a)
   let x2 = (-b - sqrtdelta) / (2 * a)
 
-  writeln("x1 = " + x1 + "x2 = " + x2)
+  writeln("x1 = " + x1 + " x2 = " + x2)
 }
 
 function printRoot (a, b) {
