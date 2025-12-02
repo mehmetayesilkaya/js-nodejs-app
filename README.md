@@ -1,5 +1,5 @@
-# js-nodejs-app
+# CSD C Programcıları Derneği - Nodejs-App-Development 
 
-this repo includes exercises and hws + will add projects
+this repo includes exercises and maybe more...
 
 
